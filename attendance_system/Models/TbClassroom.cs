@@ -10,6 +10,8 @@ namespace attendance_system.Models
         public int Id { get; set; }
         public string Section { get; set; }
         public string Grade { get; set; }
-        public int TeachId { get; set; }
+        public int DocId { get; set; }
+
+        public virtual TbDoctor Doc { get; set; }
     }
 }

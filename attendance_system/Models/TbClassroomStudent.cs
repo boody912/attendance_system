@@ -9,5 +9,8 @@ namespace attendance_system.Models
     {
         public int? StudId { get; set; }
         public int? ClassroomId { get; set; }
+
+        public virtual TbClassroom Classroom { get; set; }
+        public virtual TbStudent Stud { get; set; }
     }
 }
